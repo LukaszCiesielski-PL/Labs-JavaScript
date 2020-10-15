@@ -1,0 +1,61 @@
+<!Doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symulator Intel 8086</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="kontent">
+
+        <div class="okno" id="oknoRejestru">
+
+            <div id="naglowek">REJESTRY</div>
+
+            <div id="rejestr">
+                <div class="rejestr"> AH AL
+                    <div data-reg='AH' class="rejWysoki osemkowy"></div>
+                    <div data-reg='AL' class="rejNiski osemkowy"></div>
+                </div>
+
+               <div class="rejestr"> BH BL
+                    <div data-reg='BH' class="rejWysoki osemkowy"></div>
+                    <div data-reg='BL' class="rejNiski osemkowy"></div>
+                </div>
+
+                <div class="rejestr"> CH CL
+                    <div data-reg='CH' class="rejWysoki osemkowy"></div>
+                    <div data-reg='CL' class="rejNiski osemkowy"></div>
+                </div>
+
+                <div class="rejestr"> DH DL
+                    <div data-reg='DH' class="rejWysoki osemkowy"></div>
+                    <div data-reg='DL' class="rejNiski osemkowy"></div>
+                </div>
+
+                <div class="kontentDolny">
+                    BP
+                    <div data-reg='BP' class="rejestrWy szesnastkowy"></div>
+                    SP
+                    <div data-reg='SP' class="rejestrWy szesnastkowy"></div>
+                    SI
+                    <div data-reg='SI' class="rejestrWy szesnastkowy"></div>
+                    DI
+                    <div data-reg='DI' class="rejestrWy szesnastkowy"></div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div for="adres">
+            <div class="konsola">
+                <div class="Wiersz">Symulator Intel 8086</div><br>
+                <div class="Wiersz aktualnyWiersz"><input type="text" id="adres"></input></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="rejestr.js" defer></script>
+</html>
