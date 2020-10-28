@@ -7,18 +7,18 @@ let recordStartTime;
 function onKeyPress(ev) {
     let soundId;
     switch (ev.code) {
-        case 'KeyA':
-            soundId = 'boom';
-            break;
-        case 'KeyS':
-            soundId = 'clap';
-            break;
-        case 'KeyD':
-            soundId = 'hihat';
-            break;
-        case 'KeyF':
-            soundId = 'kick';
-            break;
+    case 'KeyA':
+        soundId = 'boom';
+        break;
+    case 'KeyS':
+        soundId = 'clap';
+        break;
+    case 'KeyD':
+        soundId = 'hihat';
+        break;
+    case 'KeyF':
+        soundId = 'kick';
+        break;
     }
     if (soundId) {
         const soundTime = Date.now() - recordStartTime;
