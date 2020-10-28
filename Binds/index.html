@@ -7,17 +7,28 @@
     <title>Binds</title>
   </head>
   <body>
-    <audio src="sounds/boom.wav" controls id="boom"></audio>
-    <audio src="sounds/clap.wav" controls id="clap"></audio>
-    <audio src="sounds/hihat.wav" controls id="hihat"></audio>
-    <audio src="sounds/kick.wav" controls id="kick"></audio>
-    <audio src="sounds/openhat.wav" controls></audio>
-    <audio src="sounds/ride.wav" controls></audio>
-    <audio src="sounds/snare.wav" controls></audio>
-    <audio src="sounds/tink.wav" controls></audio>
-    <audio src="sounds/tom.wav" controls></audio>
-    <button id="playBtn">Play recorded audio</button>
-    <script src="main.js" type="text/javascript"></script>
+    <div class="container">
+      <div class="main">
+        <div class="audioBtn">
+          <div class="sound boom" id="a" ><audio src="../Binds/sounds/boom.wav" id="boom" ></audio>A</div>
+          <div class="sound clap"><audio src="sounds/clap.wav" id="clap" ></audio>S</div>
+          <div class="sound hihat"><audio src="sounds/hihat.wav" id="hihat"></audio>D</div>
+          <div class="sound kick"><audio src="sounds/kick.wav" id="kick"></audio>F</div>
+          <div class="sound openhat"><audio src="sounds/openhat.wav" id="openhat"></audio>G</div>
+          <div class="sound ride"><audio src="sounds/ride.wav" id="ride"></audio>H</div>
+          <div class="sound snare"><audio src="sounds/snare.wav" id="snare"></audio>J</div>
+          <div class="sound tink"><audio src="sounds/tink.wav" id="tink"></audio>K</div>
+          <div class="sound tom" ><audio src="sounds/tom.wav" id="tom"></audio>L</div>
+        </div>
+        
+        <div class="opitonBtn">
+          <button id="playBtn">Play</button>
+          <button id="recordBtn">Record</button>
+        </div>
+        
+        <script src="main.js" type="text/javascript" ></script>
+      </div>
+    </div>
   </body>
-  
+
 </html>
