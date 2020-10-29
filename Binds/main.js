@@ -9,7 +9,7 @@ function onKeyPress(ev) {
     switch (ev.code) {
         case "KeyA":
             soundId = "boom";
-            
+            /*document.querySelector(`.${soundId}`).classList.toggle('sound');*/
             break;
         case "KeyS":
             soundId = "clap";
@@ -29,7 +29,9 @@ function onKeyPress(ev) {
         const soundObj = {
             soundId: soundId,
             time: soundTime,
+            
         };
+        
         playSound(soundId);
         
         recordedSound.push(soundObj);
