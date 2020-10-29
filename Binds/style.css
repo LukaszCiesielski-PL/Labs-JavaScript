@@ -78,14 +78,8 @@ body{
 .four{
     color: yellow;
 }
-input{
-    color: black;
-    width: 20px;
-    height: 20px;
-}
-input{
-    
-}
+
+
 .option{
     background-color: rgb(20, 20, 20);
     height: 87px;
@@ -111,7 +105,6 @@ input{
     border-color: transparent transparent transparent red;
 }
 #recordBtn{
-    
     background-color: rgb(120, 0, 0);
     width: 74px;
     height: 74px;
@@ -121,3 +114,34 @@ input{
 #recordBtn:hover{
     background-color: red;
 }
+/*
+#recordBtn2{
+    background-color:blue;
+    width: 74px;
+    height: 74px;
+    border: none;
+    border-radius: 10px;
+}
+#recordBtn2:hover{
+    background-color: whitesmoke;
+}
+#recordBtn3{
+    background-color:green;
+    width: 74px;
+    height: 74px;
+    border: none;
+    border-radius: 10px;
+}
+#recordBtn3:hover{
+    background-color: whitesmoke;
+}
+#recordBtn4{
+    background-color:yellow;
+    width: 74px;
+    height: 74px;
+    border: none;
+    border-radius: 10px;
+}
+#recordBtn4:hover{
+    background-color: whitesmoke;
+}*/
