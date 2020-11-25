@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Ball and Hole</title>
 </head>
 <body>
-    <svg class="meta">
-        <rect x="0" y="0" width="100%" fill="black" stroke="black"/>
-        <rect x="0" y="0" width="50%" height="50%" fill="white"/>
-        <rect x="50%" y="50%" width="50%" height="50%" fill="white"/>
-        <rect x="0" y="0" width="25%" height="50%" fill="black"/>
-        <rect x="75%" y="0" width="25%" height="50%" fill="white"/>
-        <rect x="0" y="50%" width="25%" height="50%" fill="white"/>
-        <rect x="75%" y="50%" width="25%" height="50%" fill="black"/>
+    <div class="container">
+        <div id="menu"><button onclick="start()" id="start">PLAY</button></div>
+            
+
+            <svg id="meta">
+                <rect x="0" y="0" width="100%" fill="black" stroke="black"/>
+                <rect x="0" y="0" width="50%" height="50%" fill="white"/>
+                <rect x="50%" y="50%" width="50%" height="50%" fill="white"/>
+                <rect x="0" y="0" width="25%" height="50%" fill="black"/>
+                <rect x="75%" y="0" width="25%" height="50%" fill="white"/>
+                <rect x="0" y="50%" width="25%" height="50%" fill="white"/>
+                <rect x="75%" y="50%" width="25%" height="50%" fill="black"/>
+                
+            </svg>
+            <svg id="field">
+                <line class="line one" x1="20%" y1="10%" x2="80%" y2="10%" stroke="black" stroke-width="10"/>
+                <circle class="hole one" cx="35%" cy="20%" r="30" stroke="black" fill="grey" />
+                <circle class="hole two" cx="65%" cy="20%" r="30" stroke="black" fill="grey" />
+                <line class="line two" x1="0%" y1="28%" x2="50%" y2="28%" stroke="black" stroke-width="10"/>
+                <circle class="hole three" cx="35%" cy="40%" r="30" stroke="black" fill="grey" />
+                <circle class="hole four" cx="65%" cy="40%" r="30" stroke="black" fill="grey" />
+                <line class="line three" x1="50%" y1="52%" x2="100%" y2="52%" stroke="black" stroke-width="10"/>
+                <circle class="hole five" cx="35%" cy="65%" r="30" stroke="black" fill="grey" />
+                <circle class="hole six" cx="65%" cy="65%" r="30" stroke="black" fill="grey" />
+                <line class="line four" x1="0%" y1="78%" x2="50%" y2="78%" stroke="black" stroke-width="10"/>
         
-    </svg>
-    <svg class="field">
-        <line x1="20%" y1="5%" x2="80%" y2="5%" stroke="black" stroke-width="10"/>
-        <circle cx="35%" cy="15%" r="30" stroke="black" fill="grey" />
-        <circle cx="65%" cy="15%" r="30" stroke="black" fill="grey" />
-        <line x1="0%" y1="28%" x2="50%" y2="28%" stroke="black" stroke-width="10"/>
-        <circle cx="35%" cy="40%" r="30" stroke="black" fill="grey" />
-        <circle cx="65%" cy="40%" r="30" stroke="black" fill="grey" />
-        <line x1="50%" y1="52%" x2="100%" y2="52%" stroke="black" stroke-width="10"/>
-        <circle cx="35%" cy="65%" r="30" stroke="black" fill="grey" />
-        <circle cx="65%" cy="65%" r="30" stroke="black" fill="grey" />
-        <line x1="0%" y1="78%" x2="50%" y2="78%" stroke="black" stroke-width="10"/>
-        <circle cx="35%" cy="90%" r="30" stroke="black" fill="grey" />
-        <circle cx="65%" cy="90%" r="30" stroke="black" fill="grey" />
-    </svg>
+                <circle id="ball" fill="grey" />
+            </svg>
+        </div>
     
-        
-    
-    
-        
+
+    <script src="main.js"></script>
         
    
     
