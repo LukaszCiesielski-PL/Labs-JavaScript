@@ -24,17 +24,18 @@ class SnowInCanvas {
         this.array.forEach((x) => {
             this.ctx.beginPath();
             this.ctx.fillStyle = 'white';
-            this.ctx.arc(x.posX, x.posY, x.size - 1, 0, 2 * Math.PI);
+            this.ctx.arc(x.posX, x.posY, x.size, 0, 2 * Math.PI);
             this.ctx.fill();
             this.ctx.closePath();
-
+            
+            
         });
     }
 
     changePosition() {
         this.array.forEach(function (y) {
                 y.Speed();
-                y.posY = y.posY + y.speed - 2;
+                y.posY = y.posY + y.speed ;
             });
     }
 
@@ -48,7 +49,9 @@ class SnowInCanvas {
         this.arraySnow();
         this.drawSnow();
         this.changePosition();
-        requestAnimationFrame(() => this.draw());
+        requestAnimationFrame(() => {
+            return this.draw();
+        });
     }
 
 
@@ -56,10 +59,12 @@ class SnowInCanvas {
 class Snow{
     constructor(
         windowWidth = window.innerWidth,
-        maxSize = 5,
-        minSize = 1,
-        topH = -100,
-        bottomH = -100   
+        windowHeight = window.innerHeight,
+        topH = 0,
+        bottomH = 0,
+        maxSize = 4,
+        minSize = 1
+          
     ){
         this.speed = 0;
         this.posX = this.random((windowWidth),0);
@@ -74,9 +79,13 @@ class Snow{
     
     Speed(){
         const maxSpeed = this.size;
-        if(this.speed < maxSpeed){
-            this.speed += this.random(0,1);
+        if(this.speed <= maxSpeed){
+            this.speed = this.speed + this.random(0,0.5);
         }
+    }
+    
+    Colision(){
+        
     }
 }
 
