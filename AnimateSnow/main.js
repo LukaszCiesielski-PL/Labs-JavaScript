@@ -1,3 +1,5 @@
+//https://developer.mozilla.org/pl/docs/Web/API/Canvas_API/Tutorial/Optymalizacja_canvas
+
 class SnowInCanvas {
     constructor() {
         this.canvas = document.querySelector('#SnowCanvas');
