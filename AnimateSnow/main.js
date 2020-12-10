@@ -1,5 +1,7 @@
 //https://developer.mozilla.org/pl/docs/Web/API/Canvas_API/Tutorial/Optymalizacja_canvas
-
+//https://1024bits.pl/2020/05/26/canvas-kolory-style-i-tekst/
+//https://designconcept.webdev20.pl/articles/html5-canvas-podstawy/
+//http://jsdn.pl/html5-zabawa-z-canvas-odbijajace-sie-kulki/
 class SnowInCanvas {
     constructor() {
         this.canvas = document.querySelector('#SnowCanvas');
