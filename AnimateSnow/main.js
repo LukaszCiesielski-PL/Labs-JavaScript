@@ -43,12 +43,19 @@ class SnowInCanvas {
         const canvasSnow = new Snow();
         this.array.push(canvasSnow);
     }
-    
+
+   /* Colision(){
+        if(this.posY+this.speed<screenHeight-this.size && this.posY+this.speed<0+this.size){
+            this.posY = this.posY + this.speed;
+        }
+    }*/
+
     draw() {
         this.drawField();
         this.arraySnow();
         this.drawSnow();
         this.changePosition();
+        //this.Colision();
         requestAnimationFrame(() => {
             return this.draw();
         });
@@ -84,9 +91,7 @@ class Snow{
         }
     }
     
-    Colision(){
-        
-    }
+   
 }
 
 const canvas = new SnowInCanvas('#SnowCanvas');
