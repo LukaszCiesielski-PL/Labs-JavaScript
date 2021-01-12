@@ -1,11 +1,14 @@
 body{
     margin: 0; 
-    margin: 50px 462px auto 462px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .gallery{
+    position: absolute;
+    top: 10%;
     width: 940px;
     height: 640px;
-    padding: 80px 30px 80px 30px;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 200px 200px 200px; 
@@ -15,4 +18,51 @@ body{
 .image{
     width: 300px;
     height: 200px;
+}
+.fullImage{
+    width: 840px;
+    height: 592px;
+}
+
+
+.fullscreenBox{
+    position: absolute;
+    top: -2.1%;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.visible{
+    transform: scale(1);  
+}
+
+
+
+.arrowBack{
+    position: absolute;
+    top: 44%;
+    left: 10%;
+    font-size: 72px;
+    color: white;
+}
+.arrowNext{
+    position: absolute;
+    top: 44%;
+    right: 10%;
+    font-size: 72px;
+    color: white;
+}
+
+.buttonClose{
+    position: absolute;
+    top: 14%;
+    right: 26%;
+    font-size: 48px;
+    color: white;
 }
