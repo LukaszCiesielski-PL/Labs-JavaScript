@@ -9,18 +9,34 @@
     border: 1px solid black;
     padding: 30px 10px 10px 10px;
 }
+.noteColorRedText > textarea{
+    color: red; 
+}
 .noteColorRed{
     background-color: red;
+}
+.noteColorBlueText > textarea{
+    color: blue; 
 }
 .noteColorBlue{
     background-color:blue;
 }
+.noteColorYellowText > textarea{
+    color: yellow; 
+    background-color: black;
+}
 .noteColorYellow{
     background-color: yellow;
+}
+.noteColorGreenText > textarea{
+    color:green; 
+    background-color:white;
 }
 .noteColorGreen{
     background-color: green;
 }
+
+
 .bar{
     position: absolute;
     left: 0px;
@@ -46,18 +62,23 @@
 input{
     width: 96%;
     border: none;
+    border: unset;
     background-color: white;
+    text-align: center;
 }
 
-textarea{
+.textarea{
     min-width: 180px;
     min-height: 120px;
+    color: black;
 }
 
 .date{
+    margin-top: 5px;
     padding-top: 4px;
     height: 18px;
     background-color: rgb(0, 0, 0);
+    border: 1px solid white;
     text-align: center;
     font-size: 10px;
     font-weight: 800;
@@ -87,15 +108,23 @@ textarea{
 }
 
 .changeBackground{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 5px;
     white-space: normal;
 }
+.changeText{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    white-space: normal;
+}
+
 .color{
     height: 14px;
     width: 14px;
     border: none;
     cursor: pointer;
+    padding: 0;
+
 }
 .red{
     background-color: red;
@@ -109,6 +138,21 @@ textarea{
     background-color: yellow;
 }
 .green{
+    margin-left: 5px;
+    background-color: green;
+}
+.red2{
+    background-color: red;
+}
+.blue2{
+    margin-left: 5px;
+    background-color: blue;
+}
+.yellow2{
+    margin-left: 5px;
+    background-color: yellow;
+}
+.green2{
     margin-left: 5px;
     background-color: green;
 }
