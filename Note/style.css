@@ -1,0 +1,52 @@
+.note{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    min-width: 100px;
+    min-height: 120px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 30px 10px 10px 10px;
+}
+.bar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.title{
+    margin-bottom: 4px;
+    padding-top: 2px;
+    height: 20px;
+    background-color:white;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    color: black;
+    
+}
+input{
+    width: 96%;
+    border: none;
+    background-color: white;
+}
+
+textarea{
+    min-width: 180px;
+    min-height: 120px;
+}
+
+.date{
+    padding-top: 4px;
+    height: 18px;
+    background-color: brown;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+}
