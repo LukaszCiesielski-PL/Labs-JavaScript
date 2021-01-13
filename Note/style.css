@@ -1,3 +1,4 @@
+
 .note{
     position: absolute;
     left: 50px;
@@ -7,6 +8,18 @@
     background-color: whitesmoke;
     border: 1px solid black;
     padding: 30px 10px 10px 10px;
+}
+.noteColorRed{
+    background-color: red;
+}
+.noteColorBlue{
+    background-color:blue;
+}
+.noteColorYellow{
+    background-color: yellow;
+}
+.noteColorGreen{
+    background-color: green;
 }
 .bar{
     position: absolute;
@@ -44,9 +57,58 @@ textarea{
 .date{
     padding-top: 4px;
     height: 18px;
-    background-color: brown;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     font-size: 10px;
     font-weight: 800;
     color: white;
+}
+
+.newNote{
+    position: absolute;
+    right: 10px;
+    width: 210px;
+    height: 40px;
+    padding-top: 10px;
+    border: 1px solid black;
+    background: whitesmoke;
+    text-align: center;
+    font-weight: 900;
+
+}
+.addNewNote{
+    margin-top: 5px;
+    padding-bottom: 5px;
+    background: whitesmoke;
+    border: 1px solid black;
+    border-radius: 100%;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.changeBackground{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    white-space: normal;
+}
+.color{
+    height: 14px;
+    width: 14px;
+    border: none;
+    cursor: pointer;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    margin-left: 5px;
+    background-color: blue;
+}
+.yellow{
+    margin-left: 5px;
+    background-color: yellow;
+}
+.green{
+    margin-left: 5px;
+    background-color: green;
 }
