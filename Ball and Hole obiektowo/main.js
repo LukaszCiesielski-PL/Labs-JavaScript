@@ -9,11 +9,7 @@ canvas.height = window_height;
 
 canvas.style.background = "#000000";
 
-window.addEventListener('deviceorientation', e=>{
-    console.log(e);
-    dx=e.gamma/45
-    dy=e.beta/45
-});
+
 
 class Circle{
     constructor(posX, posY, radius, color, speed){
@@ -58,6 +54,13 @@ class Circle{
         this.posY += this.dy;
     }
     
+    move(){
+        window.addEventListener('deviceorientation', e=>{
+            console.log(e);
+            this.dx=e.gamma/45
+            this.dy=e.beta/45
+        })
+    }
     
 }
 
@@ -66,7 +69,7 @@ let Distance = function(posX, posY, posX2, posY2){
     return result;
 }
 
-let circle = new Circle(0.5*window_width, 0.5*window_height, 30, "red", 2);
+let circle = new Circle(0.5*window_width, 0.5*window_height, 30, "red", 0);
 let circle2 = new Circle(0.1*window_width, 0.5*window_height, 60, "red", 0);
 
 circle.draw(context);
@@ -75,13 +78,16 @@ circle2.draw(context);
 let updateCircle = function(){
     requestAnimationFrame(updateCircle);
     context.clearRect(0,0,window_width,window_height);
+    
     circle.update();
     circle2.update();
 
     if(Distance(circle.posX,circle.posY,circle2.posX,circle2.posY) < (circle2.radius + circle.radius)){
-        console.log("WIN");
+        
     }
 }
+
+circle.move();
 updateCircle();
 
 
