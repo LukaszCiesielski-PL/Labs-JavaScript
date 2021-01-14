@@ -63,6 +63,7 @@ class Circle{
 
 let Distance = function(posX, posY, posX2, posY2){
     const result = Math.sqrt(Math.pow(posX2 - posX, 2) + Math.pow(posY2 - posY, 2));
+    return result;
 }
 
 let circle = new Circle(0.5*window_width, 0.5*window_height, 30, "red", 2);
@@ -76,6 +77,10 @@ let updateCircle = function(){
     context.clearRect(0,0,window_width,window_height);
     circle.update();
     circle2.update();
+
+    if(Distance(circle.posX,circle.posY,circle2.posX,circle2.posY) < (circle2.radius + circle.radius)){
+        console.log("WIN");
+    }
 }
 updateCircle();
 
