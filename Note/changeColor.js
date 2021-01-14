@@ -7,6 +7,7 @@ document.querySelector('.blue2').addEventListener('click', changeToBlueText);
 document.querySelector('.yellow2').addEventListener('click', changeToYellowText);
 document.querySelector('.green2').addEventListener('click', changeToGreenText);
 
+
 function changeToRed(ev){
     const colR = ev.target.parentElement.parentElement;
     colR.classList.add('noteColorRed');

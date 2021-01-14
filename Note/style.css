@@ -13,27 +13,27 @@
     color: red; 
 }
 .noteColorRed{
-    background-color: red;
+    background: red;
 }
 .noteColorBlueText > textarea{
     color: blue; 
 }
 .noteColorBlue{
-    background-color:blue;
+    background:blue;
 }
 .noteColorYellowText > textarea{
     color: yellow; 
-    background-color: black;
+    background: black;
 }
 .noteColorYellow{
-    background-color: yellow;
+    background: yellow;
 }
 .noteColorGreenText > textarea{
     color:green; 
-    background-color:white;
+    background:white;
 }
 .noteColorGreen{
-    background-color: green;
+    background: green;
 }
 
 
@@ -97,7 +97,7 @@ input{
     font-weight: 900;
 
 }
-.addNewNote{
+.addNewNotes{
     margin-top: 5px;
     padding-bottom: 5px;
     background: whitesmoke;
@@ -119,11 +119,11 @@ input{
 }
 
 .color{
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 1px 0 0 0;
 
 }
 .red{
@@ -155,4 +155,21 @@ input{
 .green2{
     margin-left: 5px;
     background-color: green;
+}
+
+.buttonSave{
+    position: absolute;
+    width: 20px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.buttonDelete{
+    width: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
 }
