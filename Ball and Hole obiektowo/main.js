@@ -93,10 +93,12 @@ circle6.draw(context);
 circle7.draw(context);
 circle8.draw(context);
 
+const time = Date.now();
+
 let updateCircle = function(){
     requestAnimationFrame(updateCircle);
     context.clearRect(0,0,window_width,window_height);
-    
+
     circle.update();
     circle2.update();
     circle3.update();
@@ -113,7 +115,8 @@ let updateCircle = function(){
         circle.color="blue";
         circle2.color="blue"; 
 
-        alert("You Win !!!");
+        const time2 = Date.now() - time;
+        alert("You Win !!! Twój czas to: "+(time2/1000));
     }
     
     if(Distance(circle.posX,circle.posY,circle3.posX,circle3.posY) < (circle3.radius+29)){
@@ -121,43 +124,48 @@ let updateCircle = function(){
         circle.dx = 0;
         circle.dy = 0;
         circle.color="red";   
-        alert("You Lose !!!");  
+        const time2 = Date.now() - time;
+        alert("You Lose !!! Twój czas to: "+(time2/1000));  
     }
     if(Distance(circle.posX,circle.posY,circle4.posX,circle4.posY) < (circle4.radius+29)){
         circle.speed = 0;
         circle.dx = 0;
         circle.dy = 0;
         circle.color="red";  
-        alert("You Lose !!!");   
+        const time2 = Date.now() - time;
+        alert("You Lose !!! Twój czas to: "+(time2/1000)); 
     }
     if(Distance(circle.posX,circle.posY,circle5.posX,circle5.posY) < (circle5.radius+29)){
         circle.speed = 0;
         circle.dx = 0;
         circle.dy = 0;
         circle.color="red"; 
-        alert("You Lose !!!");    
+        const time2 = Date.now() - time;
+        alert("You Lose !!! Twój czas to: "+(time2/1000)+" sekund");    
     }
     if(Distance(circle.posX,circle.posY,circle6.posX,circle6.posY) < (circle6.radius+29)){
         circle.speed = 0;
         circle.dx = 0;
         circle.dy = 0;
         circle.color="red"; 
-        alert("You Lose !!!");    
+        const time2 = Date.now() - time;
+        alert("You Lose !!! Twój czas to: "+(time2/1000));    
     }
     if(Distance(circle.posX,circle.posY,circle7.posX,circle7.posY) < (circle7.radius+29)){
         circle.speed = 0;
         circle.dx = 0;
         circle.dy = 0;
         circle.color="red";  
-        alert("You Lose !!!");   
+        const time2 = Date.now() - time;
+        alert("You Lose !!! Twój czas to: "+(time2/1000));
     }
     if(Distance(circle.posX,circle.posY,circle8.posX,circle8.posY) < (circle8.radius+29)){
         circle.speed = 0;
         circle.dx = 0;
         circle.dy = 0;
         circle.color="red";   
-        
-        alert("You Lose !!!");
+        const time2 = Date.now() - time;
+        alert("You Lose !!! Twój czas to: "+(time2/1000));
     }
 }
 
