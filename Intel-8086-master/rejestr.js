@@ -18,7 +18,7 @@ szesnastkowyrejestr.forEach(el => el.innerHTML = rejestrID[el.dataset.reg].join(
 
 
 
-const nowyWiersz = () => {
+const nowyWiersz = () =>  {
     const ostatniWiersz = document.querySelector('.aktualnyWiersz');
     const wiersz = document.querySelector('.konsola');
     const ostatniWierszwpisz = ostatniWiersz.querySelector('wpisz');
