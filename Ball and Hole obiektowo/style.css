@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .noteW{
     position: absolute;
     width: 100px;

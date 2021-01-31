@@ -1,13 +1,10 @@
 let canvas = document.getElementById("canvas");
 let context = canvas.getContext("2d");
-
 const window_height = window.innerHeight;
 const window_width = window.innerWidth;
-
 canvas.width = window_width;
 canvas.height = window_height;
-
-canvas.style.background = "#000000";
+canvas.style.background = "black";
 
 let Distance = function(posX, posY, posX2, posY2){
     const result = Math.sqrt(Math.pow(posX2 - posX, 2) + Math.pow(posY2 - posY, 2));
@@ -28,7 +25,7 @@ class Circle{
     draw(context){
         context.beginPath();
         context.fillStyle = this.color;
-        context.lineWidht = 5;
+        
         context.arc(this.posX,this.posY,this.radius, 0, Math.PI * 2, false);
         context.fill();
         context.closePath();
@@ -57,10 +54,6 @@ class Circle{
         this.posY += this.dy;
     }
     
-    timeCount(){
-        
-        
-    }
 
     move(){
         window.addEventListener('deviceorientation', e=>{
@@ -169,7 +162,7 @@ let updateCircle = function(){
     }
 }
 
-circle.timeCount();
+
 circle.move();
 updateCircle();
 

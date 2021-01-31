@@ -85,7 +85,7 @@ class Snow{
     }
     
     random = function (max, min) {
-        return Math.random() * (max - min +1) + min;
+        return Math.random() * (max - min +1) + min+1;
     };
         
     
